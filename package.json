@@ -1,0 +1,24 @@
+{
+  "name": "api-rest",
+  "version": "1.0.0",
+  "description": "Creando una api-rest de 0 a 100",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "api-rest"
+  ],
+  "author": "jhonS",
+  "license": "ISC",
+  "devDependencies": {
+    "config": "^3.3.9",
+    "mongoose": "^7.4.3",
+    "mongoose-unique-validator": "^4.0.0",
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "crypto-js": "^4.1.1",
+    "express": "^4.18.2"
+  }
+}

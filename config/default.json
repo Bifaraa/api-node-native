@@ -1,0 +1,18 @@
+{
+  "db-connections": {
+    "mongodb": {
+      "host":"cluster0.pmhghiu.mongodb.net",
+      "user":"jhon1701720506",
+      "password": "j8zBO6YT4Ks1wL2o",
+      "dbname": "Cluster0"
+    }
+  },
+  "secretkeys": {
+    "cryptojs": "123"
+  },
+  "roles": {
+    "student": 1,
+    "teacher": 2
+  },
+  "server-port": 3000
+}
