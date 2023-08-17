@@ -7,7 +7,7 @@ const validator = require('mongoose-unique-validator');
 // Schema creation
 const teacherSchema = new Schema({
   document: {
-    tipo: 'Number',
+    type: 'Number',
     requiered: true,
     unique: true,
   },

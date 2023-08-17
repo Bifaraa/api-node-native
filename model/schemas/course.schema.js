@@ -6,7 +6,7 @@ const Schema = mongoose.Schema;
 // Schema creation
 const courseSchema = new Schema({
   code: {
-    tipo: 'String',
+    type: 'String',
     requiered: true,
   },
 

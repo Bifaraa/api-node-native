@@ -1,10 +1,10 @@
 /** packages */
 
 const mongoose = require('mongoose');
-
+const db = require('../db/mongodb');
 /** using schema  */
 const schema = require('../schemas/student.schema');
-
+db();
 schema.statics = {
   create: function (data, cb) {
     let doc = new this(data);

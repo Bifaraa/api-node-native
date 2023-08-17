@@ -6,7 +6,7 @@ const Schema = mongoose.Schema;
 // Schema creation
 const groupSchema = new Schema({
   course_id: {
-    tipo: mongoose.Schema.Types.ObjectId,
+    type: mongoose.Schema.Types.ObjectId,
     ref: 'coll_course',
     requiered: true,
   },

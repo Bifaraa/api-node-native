@@ -6,7 +6,7 @@ const Schema = mongoose.Schema;
 // Schema creation
 const periodSchema = new Schema({
   year: {
-    tipo: 'Number',
+    type: 'Number',
     requiered: true,
     min: 2020,
     max: 2030,
