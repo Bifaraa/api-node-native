@@ -1,26 +1,25 @@
 /** packages */
-
 const mongoose = require('mongoose');
 const db = require('../db/mongodb');
 /** using schema  */
 const schema = require('../schemas/student.schema');
 db();
+
 schema.statics = {
-  create: function (data, cb) {
-    let doc = new this(data);
-    doc.save(cb);
+  create: function (data) {
+    return this.create(data);
   },
-  getAll: function (query, cb) {
-    this.find(query, cb);
+  getAll: async function (query) {
+    return await this.find(query);
   },
-  getByCode: function (query, cb) {
-    this.find(query, cb);
+  getByCode: async function (query) {
+    return await this.find(query);
   },
-  update: function (query, data, cb) {
-    this.findOneAndUpdate(query, { $set: data }, { new: true }, cb);
+  update: async function (query, data) {
+    return await this.findOneAndUpdate(query, { $set: data }, { new: true });
   },
-  delete: function (query, cb) {
-    this.findOneAndDelete(query);
+  delete: async function (query) {
+    return await this.findOneAndDelete(query);
   },
 };
 
